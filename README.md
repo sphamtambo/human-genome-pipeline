@@ -1,14 +1,18 @@
-# GATK Pipeline
+# GATK Pipeline for Whole Genome Sequencing
 
-This is a comprehensive GATK (Genome Analysis Toolkit) pipeline for variant calling from sequencing data. It includes the following steps:
+This pipeline implements the GATK (Genome Analysis Toolkit) Best Practices workflow for germline SNP and Indel discovery in whole genome sequencing (WGS) data. It provides a comprehensive solution for variant calling and filtration, designed to ensure high-quality results from raw sequencing data to filtered variant calls.
 
-1. Quality Control (FastQC)
-2. Alignment with BWA
-3. Deduplication
+The pipeline follows these key steps, adhering to GATK best practices:
+
+1. Quality Control of Raw Sequencing Data (FastQC)
+2. Mapping to Reference Genome (BWA-MEM)
+3. Marking Duplicates (MarkDuplicates)
 4. Base Quality Score Recalibration (BQSR)
-5. Metrics Collection
-6. Variant Calling with HaplotypeCaller
-7. Variant Filtering
+5. Calling Variants (HaplotypeCaller)
+6. Variant Filtration (Hard Filters)
+7. Variant Annotation (Funcotator)
+
+This workflow is optimized for high-throughput whole genome sequencing data and incorporates the latest recommendations from the GATK team to maximize the accuracy and reliability of variant calls.
 
 ## Prerequisites
 
