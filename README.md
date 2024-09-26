@@ -30,8 +30,8 @@ Follow these steps to set up and run the GATK pipeline:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/sphamtambo/gatk-pipeline.git
-   cd gatk-pipeline
+   git clone https://github.com/sphamtambo/human-genome-pipeline.git
+   cd human-genome-pipeline
    ```
 
 2. Set up the configuration files:
